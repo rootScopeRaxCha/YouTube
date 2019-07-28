@@ -29,10 +29,11 @@ angularModule.controller('globalCtrl', ($scope, $rootScope, $http, $state) => {
 			event.preventDefault();
 			$http({
 				method: 'GET',
-				url: `https://www.googleapis.com/youtube/v3/search?key=${key}&part=snippet&q=${keyword}&maxResults=6`
+				url: `https://www.googleapis.com/youtube/v3/search?key=${key}&part=snippet&q=${keyword}&maxResults=50`
 			}).then((snapshot) => {
 				console.log(snapshot);
 				for ( let k in snapshot.data.items ) {
+					console.log(k);
 					$rootScope.datas.push(snapshot.data.items[k]);
 				}
 			});

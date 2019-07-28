@@ -36,11 +36,12 @@ angularModule.controller('globalCtrl', function ($scope, $rootScope, $http, $sta
       event.preventDefault();
       $http({
         method: 'GET',
-        url: "https://www.googleapis.com/youtube/v3/search?key=".concat(key, "&part=snippet&q=").concat(keyword, "&maxResults=6")
+        url: "https://www.googleapis.com/youtube/v3/search?key=".concat(key, "&part=snippet&q=").concat(keyword, "&maxResults=50")
       }).then(function (snapshot) {
         console.log(snapshot);
 
         for (var k in snapshot.data.items) {
+          console.log(k);
           $rootScope.datas.push(snapshot.data.items[k]);
         }
       });
