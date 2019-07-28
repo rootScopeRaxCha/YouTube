@@ -1,0 +1,57 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top elegant-color-dark scrolling-navbar">
+
+  <!-- Navbar brand -->
+  <div class="container">
+  	<a class="navbar-brand waves-effect waves-light" ui-sref="root.home"> 
+     <img src="img/icon.png" height="30" class="d-inline-block align-top"
+      alt="YouTube logo"> YouTube 
+    </a>
+  	
+  	<!-- Collapse button -->
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+  	  aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+  	  <span class="navbar-toggler-icon"></span>
+  	</button>
+  	
+  	<!-- Collapsible content -->
+  	<div class="collapse navbar-collapse" id="basicExampleNav">
+  	
+  	  <!-- Links -->
+  	  <ul class="navbar-nav mr-auto">
+  	    <li class="nav-item" ui-sref-active="active">
+  	      <a class="nav-link" ui-sref="root.home">Inicio
+  	      </a>
+  	    </li>
+        <!-- ui-sref="root.home({'#': 'parrafo'})" -->
+  	    <li class="nav-item" ui-sref-active="active">
+  	      <a class="nav-link" ui-sref="root.tendencias">Tendencias</a>
+  	    </li>
+  	    <li class="nav-item" ui-sref-active="active">
+  	      <a class="nav-link" ui-sref="root.videos">Vídeos</a>
+  	    </li>
+  	  </ul>
+  	  <!-- Links -->
+  	
+      <!-- <form class="">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search" ng-model="keyword" ng-keydown="pressToSearch($event, keyword)">
+          <button class="btn btn-md btn-outline-light m-0 px-3 waves-effect waves-light not-bg" type="button" ng-click="busqueda(keyword)"><i class="fas fa-search"></i></button>
+        </div>
+      </form> -->
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+        aria-describedby="MaterialButton-addon2" ng-model="keyword" ng-keydown="pressToSearch($event, keyword)">
+          <div class="input-group-append">
+            <button class="btn btn-md btn-outline-light m-0 px-3 waves-effect waves-light not-bg" type="button" id="MaterialButton-addon2" ng-click="busqueda(keyword)"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+  	</div>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+<div ui-view="content"></div>

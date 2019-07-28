@@ -1,0 +1,54 @@
+.top-nav-collapse {
+	background-color: rgba(75, 81, 93, .8) !important;
+}
+
+.waves-effect.waves-red .waves-ripple {
+	background-color: rgba(244, 67, 54, 0.7); 
+}
+
+.waves-effect.waves-yellow .waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7); 
+}
+
+.waves-effect.waves-orange .waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7); 
+}
+
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7); 
+}
+
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7); 
+}
+
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7); 
+}
+
+.waves-effect.waves-light .waves-ripple {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline {
+	border: 2px solid #fff;
+	padding-top: 2.9% !important;
+	padding-bottom: 2.9% !important;
+}
+
+/*-- button sin fondo y bordes --*/
+.not-bg {
+	border: none !important;
+	background: none;
+}
+
+.col.video-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.container.videos {
+	padding-top: 0.5%;
+}

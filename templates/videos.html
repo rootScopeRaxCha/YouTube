@@ -1,0 +1,11 @@
+<div class="container videos">
+	<div class="row">
+		<!-- con ng-repeat mostramos los datos de la API, con ng-click enviamos el array que obtenemos, y con ui-sref nos dirigimos al video que seleccionemos -->
+		<div class="col video-col text-center" ng-repeat=" x in datas " ng-click="sendData(x)" ui-sref="root.showVideos({videoId: x.snippet.channelId})">
+			<div class="info-cont">
+				<img src="{{x.snippet.thumbnails.medium.url}}">
+				<p>{{ x.snippet.title }}</p>
+			</div>
+		</div>
+	</div>
+</div>
